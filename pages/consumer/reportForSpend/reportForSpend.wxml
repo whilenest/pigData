@@ -1,0 +1,49 @@
+<!--pages/consumer/reportForSpend/reportForSpend.wxml-->
+<view>
+  <view class="tips">请选择你需要查询的月份：</view>
+  <view class="weui-form__control-area">
+		<view class="weui-cells__group weui-cells__group_form">
+			<view class="weui-cells">
+				<!-- 年 -->
+				<view class="weui-cell weui-cell_active weui-cell_select weui-cell_select-after inputbox">
+					<view class="weui-cell__hd">
+						<label class="weui-label" style="width: 3em;">年</label>
+					</view>
+					<view class="weui-cell__bd">
+							<picker aria-role="combobox" bindchange="bindPickerChange1" range="{{array1}}">
+									<view class="weui-select">{{array1[value1]}}</view>
+							</picker>
+					</view>
+				</view>
+				<!-- 月 -->
+				<view class="weui-cell weui-cell_active weui-cell_select weui-cell_select-after inputboxinputbox">
+					<view class="weui-cell__hd">
+						<label class="weui-label" style="width: 3em;">月</label>
+					</view>
+					<view class="weui-cell__bd">
+							<picker aria-role="combobox" bindchange="bindPickerChange2" range="{{array2}}">
+									<view class="weui-select">{{array2[value2]}}</view>
+							</picker>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<button class="btn" bindtap="handlBtnClick">确定</button>
+</view>
+
+<view class="line"></view>
+
+<view wx:if="{{show}}" class="reportBox">
+  <view class="title">{{data.year}}年{{data.month}}开支报销记录</view>
+  <view class="box">
+		<view wx:for="{{data.spend}}" wx:key="index">
+			<view wx:for="{{item.textList}}" wx:key="index"  wx:for-item="newitem">
+				{{newitem}}
+				<br/>
+			</view>
+			<view class="name">提交人：{{item.name}}</view>
+		</view>
+  </view>
+	<view class="all">当月总开支报销：{{data.spendAll}}元</view>
+</view>

@@ -1,0 +1,10 @@
+<!--pages/business/home/home.wxml-->
+<view class="box">
+  <view class="tips">超管您好，欢迎您登陆。</view>
+  <view class="tips">请问您需要对什么进行操作？</view>
+</view>
+<view class="btnbox">
+  <button bindtap="handlSelectForWatch" data-watch="train">车次</button>
+  <button bindtap="handlSelectForWatch" data-watch="report">月报表</button>
+</view>
+

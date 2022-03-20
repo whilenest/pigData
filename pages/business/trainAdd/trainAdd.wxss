@@ -1,0 +1,28 @@
+/* pages/business/trainAdd/trainAdd.wxss */
+page {
+  padding-bottom: 200rpx;
+}
+.box {
+  overflow: hidden;
+  margin-top: 0;
+}
+.title {
+  margin-top: 50rpx;
+  font-size: 46rpx;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50rpx;
+}
+button {
+  display: block;
+  height: 100rpx;
+  line-height: 95rpx;
+  font-size: 38rpx;
+  margin: 30rpx;
+  padding: 0;
+  background-color: #fff;
+  font-weight: normal;
+  border: 1rpx solid #333;
+  margin-top: 130rpx;
+  /* font-weight: normal; */
+}

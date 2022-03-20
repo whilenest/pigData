@@ -1,0 +1,7 @@
+<!--pages/loginUp/loginUp.wxml-->
+<view class="box">
+  <view class="title">生猪记录数据查询系统</view>
+  <input class="inputA" type="password" bindinput="passWdInput" placeholder="请输入密码"/>
+  {{value}}
+  <button class="btn" bindtap="handlLoginClick">登陆</button>
+</view>

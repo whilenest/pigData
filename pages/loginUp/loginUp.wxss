@@ -1,0 +1,25 @@
+/* pages/loginUp/loginUp.wxss */
+.box {
+  text-align: center; 
+}
+.title {
+ margin-top: 150rpx;
+ font-size: 60rpx;
+ font-weight: bold;
+ margin-bottom: 150rpx;
+}
+.inputA {
+  border: 1rpx solid #aaa;
+  width: 400rpx;
+  height: 66rpx;
+  margin: 0 auto;
+  border-radius: 10rpx;
+}
+button.btn {
+  width: 300rpx;
+  margin-top: 150rpx;
+  margin-bottom: 50rpx;
+  font-weight: normal;
+  color: #fff;
+  background-color: #5697d6;
+}

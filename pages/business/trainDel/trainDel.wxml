@@ -1,0 +1,35 @@
+<!--pages/business/trainDel/trainDel.wxml-->
+
+<view class="weui-form__control-area box">
+  <view class="weui-cells__group weui-cells__group_form">
+    <view class="tips">请输入需要删除的车次编号：</view>
+    <view class="weui-cells">
+
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd"><label class="weui-label">车次编号：</label></view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindinput="handlInputChange" data-change="id" placeholder="请填写" binplaceholder-class="weui-input__placeholder" />
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<button bindtap="handlBtnClickEnd" class="btn">确定</button>
+
+<view class="line"></view>
+
+<view wx:if="{{show}}" class="pigListbox">
+  <view class="th title">
+    <text>车次编号</text>
+    <text>装猪日期</text>
+    <text>盈亏</text>
+  </view>
+  <view class="th list">
+    <text>{{data.id}}</text>
+    <text class=".mid">{{data.stockYear + '年' + data.stockMonth + '月' + data.stockDate + '日'}}</text>
+    <text style="color: {{data.profitAndLoss >= 0 ? 'red' : 'green'}};">{{data.profitAndLoss >= 0 ? '+' + data.profitAndLoss : data.profitAndLoss}}</text>
+  </view>
+</view>
+
+<button bindtap="handlBtnClick">删除</button>
+

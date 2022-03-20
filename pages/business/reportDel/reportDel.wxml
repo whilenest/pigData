@@ -1,0 +1,36 @@
+<!--pages/business/reportDel/reportDel.wxml-->
+
+<view class="weui-form__control-area box">
+  <view class="weui-cells__group weui-cells__group_form">
+    <view class="tips">请输入需要删除的报表年月：</view>
+    <view class="weui-cells">
+
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd"><label class="weui-label">年：</label></view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindinput="handlInputChange" data-change="year" placeholder="请填写" binplaceholder-class="weui-input__placeholder" />
+        </view>
+      </view>
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd"><label class="weui-label">月：</label></view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindinput="handlInputChange" data-change="month" placeholder="请填写" binplaceholder-class="weui-input__placeholder" />
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<button bindtap="handlBtnClickEnd" class="btn">确定</button>
+
+<view class="line"></view>
+
+<view wx:if="{{show}}" class="reportBox">
+  <view class="box">
+    <view>总成本支出：{{data.allPay}}元</view>
+    <view>总卖出收入：{{data.allIncome}}元</view>
+    <view>开支报销：{{data.spendAll}}元</view>
+    <view class="last" style="color: {{(data.allIncome - data.spendAll - data.allPay) >= 0 ? 'red' : 'green'}};">总盈亏：{{data.allIncome - data.spendAll - data.allPay}}元</view>
+  </view>
+</view>
+
+<button bindtap="handlBtnClick">删除</button>

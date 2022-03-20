@@ -1,0 +1,55 @@
+/* pages/consumer/home/home.wxss */
+.top {
+  padding: 25rpx 30rpx;
+}
+.tips {
+  color: #787878;
+  font-size: 28rpx;
+}
+.title {
+  font-size: 44rpx;
+  margin-top: 16rpx;
+}
+
+.btn {
+  width: 100vw;
+  height: 80rpx;
+  display: flex;
+  margin-bottom: 45rpx;
+}
+.btn button {
+  width: 200rpx;
+  height: 80rpx;
+  border: 1rpx solid #787878;
+  font-size: 30rpx;
+  background-color: #fff;
+  font-weight: lighter;
+}
+.btn button.active {
+  color: #5697d6;
+  font-weight: normal;
+  border-color: #5697d6;
+}
+
+.pigListbox {
+  padding: 0 30rpx;
+}
+.pigListbox .th {
+  display: flex;
+  border-bottom: 1rpx solid #efefef;
+}
+.pigListbox .title {
+  font-size: 30rpx;
+  padding: 15rpx 0;
+}
+.pigListbox .list {
+  font-size: 28rpx;
+  padding: 20rpx 0;
+}
+.pigListbox text {
+  flex: 1;
+  text-align: center;
+}
+.pigListbox text.mid {
+  flex: 1.2
+}

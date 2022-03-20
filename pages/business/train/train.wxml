@@ -1,0 +1,6 @@
+<!--pages/business/train/train.wxml-->
+<view class="btnbox">
+  <button bindtap="handlSelectForWatch" data-watch="Add">添加</button>
+  <button bindtap="handlSelectForWatch" data-watch="Select">修改</button>
+  <button bindtap="handlSelectForWatch" data-watch="Del">删除</button>
+</view>

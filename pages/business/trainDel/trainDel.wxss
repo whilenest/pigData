@@ -1,0 +1,47 @@
+/* pages/business/trainDel/trainDel.wxss */
+.tips {
+  margin: 60rpx 30rpx 60rpx 30rpx;
+}
+button {
+  display: block;
+  height: 100rpx;
+  line-height: 95rpx;
+  font-size: 38rpx;
+  margin: 30rpx;
+  padding: 0;
+  background-color: #fff;
+  font-weight: normal;
+  border: 1rpx solid #333;
+  margin-top: 130rpx;
+  /* font-weight: normal; */
+}
+.pigListbox {
+  padding: 0 30rpx;
+}
+.pigListbox .th {
+  display: flex;
+  border-bottom: 1rpx solid #efefef;
+}
+.pigListbox .title {
+  font-size: 30rpx;
+  padding: 15rpx 0;
+}
+.pigListbox .list {
+  font-size: 28rpx;
+  padding: 20rpx 0;
+}
+.pigListbox text {
+  flex: 1;
+  text-align: center;
+}
+.pigListbox text.mid {
+  flex: 1.2
+}
+button.btn {
+  margin-top: 60rpx;
+  margin-bottom: 60rpx;
+  width: 150rpx;
+  height: 60rpx;
+  font-size: 30rpx;
+  line-height: 54rpx;
+}

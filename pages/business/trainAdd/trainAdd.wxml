@@ -1,0 +1,231 @@
+<!--pages/business/trainAdd/trainAdd.wxml-->
+<view class="weui-form__control-area box">
+  <view class="weui-cells__group weui-cells__group_form">
+    <view class="title">装猪详情</view>
+    <view class="weui-cells">
+
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd"><label class="weui-label">车次编号：</label></view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindinput="handlInputChange" data-change="id" placeholder="请填写" binplaceholder-class="weui-input__placeholder" />
+        </view>
+      </view>
+
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd"><label class="weui-label">装猪日期：</label></view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindinput="handlInputChange" data-change="stockDay" placeholder="请填写" binplaceholder-class="weui-input__placeholder" />
+        </view>
+      </view>
+
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd"><label class="weui-label">总头数：</label></view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindinput="handlInputChange" data-change="stockAllNumb" placeholder="请填写" binplaceholder-class="weui-input__placeholder" />
+        </view>
+      </view>
+
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd"><label class="weui-label">总重量：</label></view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindinput="handlInputChange" data-change="stockAllWeight" placeholder="请填写" binplaceholder-class="weui-input__placeholder" />
+        </view>
+      </view>
+
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd"><label class="weui-label">均重：</label></view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindinput="handlInputChange" data-change="stockAverWeight" placeholder="请填写" binplaceholder-class="weui-input__placeholder" />
+        </view>
+      </view>
+
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd"><label class="weui-label">单价：</label></view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindinput="handlInputChange" data-change="stockAverPrice" placeholder="请填写" binplaceholder-class="weui-input__placeholder" />
+        </view>
+      </view>
+
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd"><label class="weui-label">其他：</label></view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindinput="handlInputChange" data-change="stockOrder" placeholder="请填写" binplaceholder-class="weui-input__placeholder" />
+        </view>
+      </view>
+
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd"><label class="weui-label">总金额：</label></view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindinput="handlInputChange" data-change="stockAllPrice" placeholder="请填写" binplaceholder-class="weui-input__placeholder" />
+        </view>
+      </view>
+
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd"><label class="weui-label">收款人：</label></view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindinput="handlInputChange" data-change="stockCollName" placeholder="请填写" binplaceholder-class="weui-input__placeholder" />
+        </view>
+      </view>
+
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd"><label class="weui-label">卡号：</label></view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindinput="handlInputChange" data-change="stockCollCard" placeholder="请填写" binplaceholder-class="weui-input__placeholder" />
+        </view>
+      </view>
+
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd"><label class="weui-label">备注：</label></view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindinput="handlInputChange" data-change="stockRemark" placeholder="请填写" binplaceholder-class="weui-input__placeholder" />
+        </view>
+      </view>
+
+    </view>
+
+    <view class="title">运输详情</view>
+    <view class="weui-cells">
+
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd"><label class="weui-label">司机：</label></view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindinput="handlInputChange" data-change="transportName" placeholder="请填写" binplaceholder-class="weui-input__placeholder" />
+        </view>
+      </view>
+
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd"><label class="weui-label">司机电话：</label></view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindinput="handlInputChange" data-change="transportTell" placeholder="请填写" binplaceholder-class="weui-input__placeholder" />
+        </view>
+      </view>
+
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd"><label class="weui-label">车牌：</label></view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindinput="handlInputChange" data-change="transportCar" placeholder="请填写" binplaceholder-class="weui-input__placeholder" />
+        </view>
+      </view>
+
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd"><label class="weui-label">基本运费：</label></view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindinput="handlInputChange" data-change="transportPrice" placeholder="请填写" binplaceholder-class="weui-input__placeholder" />
+        </view>
+      </view>
+
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd"><label class="weui-label">其他：</label></view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindinput="handlInputChange" data-change="transportOrderPrice" placeholder="请填写" binplaceholder-class="weui-input__placeholder" />
+        </view>
+      </view>
+
+    </view>
+
+    <view class="title">卸猪详情</view>
+    <view class="weui-cells">
+
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd"><label class="weui-label">卸猪日期：</label></view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindinput="handlInputChange" data-change="sellDay" placeholder="请填写" binplaceholder-class="weui-input__placeholder" />
+        </view>
+      </view>
+
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd"><label class="weui-label">卸猪地址：</label></view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindinput="handlInputChange" data-change="sellAddress" placeholder="请填写" binplaceholder-class="weui-input__placeholder" />
+        </view>
+      </view>
+
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd"><label class="weui-label">卸猪头数：</label></view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindinput="handlInputChange" data-change="sellAllNumb" placeholder="请填写" binplaceholder-class="weui-input__placeholder" />
+        </view>
+      </view>
+
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd"><label class="weui-label">伤残情况：</label></view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindinput="handlInputChange" data-change="sellLoss" placeholder="请填写" binplaceholder-class="weui-input__placeholder" />
+        </view>
+      </view>
+
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd"><label class="weui-label">总重量：</label></view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindinput="handlInputChange" data-change="sellAllWeight" placeholder="请填写" binplaceholder-class="weui-input__placeholder" />
+        </view>
+      </view>
+
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd"><label class="weui-label">均重：</label></view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindinput="handlInputChange" data-change="sellAverWeight" placeholder="请填写" binplaceholder-class="weui-input__placeholder" />
+        </view>
+      </view>
+
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd"><label class="weui-label">单价：</label></view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindinput="handlInputChange" data-change="sellAverPrice" placeholder="请填写" binplaceholder-class="weui-input__placeholder" />
+        </view>
+      </view>
+
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd"><label class="weui-label">总掉标：</label></view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindinput="handlInputChange" data-change="sellLossWeight" placeholder="请填写" binplaceholder-class="weui-input__placeholder" />
+        </view>
+      </view>
+
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd"><label class="weui-label">总差价：</label></view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindinput="handlInputChange" data-change="sellPriceDiff" placeholder="请填写" binplaceholder-class="weui-input__placeholder" />
+        </view>
+      </view>
+
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd"><label class="weui-label">代卖费：</label></view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindinput="handlInputChange" data-change="sellPriceCons" placeholder="请填写" binplaceholder-class="weui-input__placeholder" />
+        </view>
+      </view>
+
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd"><label class="weui-label">其他：</label></view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindinput="handlInputChange" data-change="sellOrder" placeholder="请填写" binplaceholder-class="weui-input__placeholder" />
+        </view>
+      </view>
+
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd"><label class="weui-label">总金额：</label></view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindinput="handlInputChange" data-change="sellAllPrice" placeholder="请填写" binplaceholder-class="weui-input__placeholder" />
+        </view>
+      </view>
+
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd"><label class="weui-label">盈亏：</label></view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindinput="handlInputChange" data-change="profitAndLoss" placeholder="请填写" binplaceholder-class="weui-input__placeholder" />
+        </view>
+      </view>
+
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd"><label class="weui-label">备注：</label></view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindinput="handlInputChange" data-change="sellRemark" placeholder="请填写" binplaceholder-class="weui-input__placeholder" />
+        </view>
+      </view>
+    </view>
+
+  </view>
+</view>
+
+<button bindtap="handlBtnClick">添加</button>

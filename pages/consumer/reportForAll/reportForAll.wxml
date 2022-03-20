@@ -1,0 +1,12 @@
+<!--pages/consumer/reportForAll/reportForAll.wxml-->
+
+<view class="reportBox">
+  <view class="title">至更新上月为止目前总盈亏报表</view>
+  <view class="box">
+    <view>总成本支出：{{data.allPay}}元</view>
+    <view>总卖出收入：{{data.allIncome}}元</view>
+    <view>开支报销：{{data.spendAll}}元</view>
+    <view class="last" style="color: {{(data.allIncome - data.spendAll - data.allPay) >= 0 ? 'red' : 'green'}};">总盈亏：{{data.allIncome - data.spendAll - data.allPay}}元</view>
+  </view>
+</view>
+

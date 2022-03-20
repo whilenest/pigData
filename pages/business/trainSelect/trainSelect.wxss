@@ -1,0 +1,17 @@
+/* pages/business/trainSelect/trainSelect.wxss */
+.tips {
+  margin: 60rpx 30rpx 60rpx 30rpx;
+}
+button {
+  display: block;
+  height: 100rpx;
+  line-height: 95rpx;
+  font-size: 38rpx;
+  margin: 30rpx;
+  padding: 0;
+  background-color: #fff;
+  font-weight: normal;
+  border: 1rpx solid #333;
+  margin-top: 130rpx;
+  /* font-weight: normal; */
+}

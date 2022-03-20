@@ -1,0 +1,53 @@
+<!--pages/consumer/detailPage/detailPage.wxml-->
+<view class="stockBox">
+  <view class="title">装猪详情</view>
+  <view class="box">
+    <view>车次编号：{{data.id}}</view>
+    <view>装猪日期：{{data.stockYear}}年{{data.stockMonth}}月{{data.stockDate}}日</view>
+    <view>装猪地址：{{data.stockAddress}}</view>
+    <view>总头数：{{data.stockAllNumb}}头</view>
+    <view>总重量：{{data.stockAllWeight}}斤</view>
+    <view>均重：{{data.stockAverWeight}}斤</view>
+    <view>单价：{{data.stockAverPrice}}元</view>
+    <view>其他：{{data.stockOrder}}</view>
+    <view>总金额：{{data.stockAllPrice}}</view>
+    <view>收款人：{{data.stockCollName}}</view>
+    <view>卡号：{{data.stockCollCard}}</view>
+    <view class="last">备注：{{data.stockRemark}}</view>
+  </view>
+</view>
+
+<view class="line"></view>
+
+<view class="transportBox">
+  <view class="title">运输详情</view>
+  <view class="box">
+    <view>司机：{{data.transportName}}</view>
+    <view>司机电话：{{data.transportTell}}</view>
+    <view>车牌：{{data.transportCar}}</view>
+    <view>基本运费：{{data.transportPrice}}元</view>
+    <view class="last">其他：{{data.transportOrderPrice ? data.transportOrderPrice : "无"}}</view>
+  </view>
+</view>
+
+<view class="line"></view>
+
+<view class="sellBox">
+  <view class="title">卸猪详情</view>
+  <view class="box lastbox">
+    <view>卸猪日期：{{data.sellYear}}年{{data.sellMonth}}月{{data.sellDate}}日</view>
+    <view>卸猪地址：{{data.sellAddress}}</view>
+    <view>卸猪头数：{{data.sellAllNumb}}头</view>
+    <view>伤残情况：{{data.sellLoss}}</view>
+    <view>卖出总重量：{{data.sellAllWeight}}斤</view>
+    <view>均重：{{data.sellAverWeight}}斤</view>
+    <view>单价：{{data.sellAverPrice}}元</view>
+    <view>总掉标：{{data.sellLossWeight}}斤</view>
+    <view>总差价：{{data.sellPriceDiff}}元</view>
+    <view>代卖入场费：{{data.sellPriceCons}}元</view>
+    <view>其他：{{data.sellOrder}}</view>
+    <view>总金额：{{data.sellAllPrice}}</view>
+    <view>备注：{{data.sellRemark ? data.sellRemark : '无'}}</view>
+    <view class="income last">盈亏：{{data.profitAndLoss >= 0 ? '+' + data.profitAndLoss : data.profitAndLoss}}元</view>
+  </view>
+</view>

@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/loginUp/loginUp",
+    "pages/consumer/home/home",
+    "pages/consumer/search/search",
+    "pages/consumer/searchForDate/searchForDate",
+    "pages/consumer/searchForNumb/searchForNumb",
+    "pages/consumer/detailPage/detailPage",
+    "pages/consumer/report/report",
+    "pages/consumer/reportForMonth/reportForMonth",
+    "pages/consumer/reportForYear/reportForYear",
+    "pages/consumer/reportForAll/reportForAll",
+    "pages/consumer/reportForSpend/reportForSpend",
+    
+    "pages/business/home/home",
+    "pages/business/train/train",
+    "pages/business/trainAdd/trainAdd",
+    "pages/business/trainSelect/trainSelect",
+    "pages/business/trainMod/trainMod",
+    "pages/business/trainDel/trainDel",
+    "pages/business/report/report",
+    "pages/business/reportAdd/reportAdd",
+    "pages/business/reportSelect/reportSelect",
+    "pages/business/reportMod/reportMod",
+    "pages/business/reportDel/reportDel"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/consumer/home/home",
+        "iconPath": "images/consumer/home.png",
+        "selectedIconPath": "images/consumer/homeSelect.png"
+      },
+      {
+        "pagePath": "pages/consumer/search/search",
+        "iconPath": "images/consumer/search.png",
+        "selectedIconPath": "images/consumer/searchSelect.png"
+      },
+      {
+        "pagePath": "pages/consumer/report/report",
+        "iconPath": "images/consumer/report.png",
+        "selectedIconPath": "images/consumer/reportSelect.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

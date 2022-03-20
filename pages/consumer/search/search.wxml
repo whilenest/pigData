@@ -1,0 +1,5 @@
+<!--pages/consumer/search/search.wxml-->
+<view class="btnbox">
+  <button bindtap="handlSelectForWatch" data-watch="Date">按日期查询</button>
+  <button bindtap="handlSelectForWatch" data-watch="Numb">按车次编号查询</button>
+</view>

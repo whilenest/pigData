@@ -1,0 +1,64 @@
+/* pages/consumer/reportForYear/reportForYear.wxss */
+
+.tips {
+  margin: 60rpx 30rpx 0 30rpx;
+}
+.weui-form__control-area {
+  margin-top: 30rpx;
+}
+.dataListBox {
+  padding: 0 30rpx;
+}
+.list {
+  border-bottom: 1rpx solid #efefef;
+  padding: 30rpx;
+  position: relative;
+}
+.list::after {
+  content: ">";
+  font-family: '宋体';
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  right: 30rpx;
+  top: 88rpx;
+}
+.list text{
+  display: block;
+  line-height: 60rpx;
+}
+.inputbox {
+  height: 100rpx;
+}
+.btn {
+  margin-top: -30rpx;
+  margin-bottom: 50rpx;
+  background-color: #fff;
+  font-weight: normal;
+  border: 1rpx solid #333;
+}
+
+
+.title {
+  font-size: 42rpx;
+  font-weight: bold;
+  text-align: center;
+  margin: 40rpx 0;
+}
+.box {
+  margin: 0 60rpx;
+  border: 1rpx solid #aaa;
+  margin-bottom: 50rpx;
+}
+.box view {
+  padding: 7rpx 20rpx;
+  border-bottom: 1rpx solid #aaa;
+  font-size: 36rpx;
+  color: #454545;
+}
+
+.box view.last {
+  border: none;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+}

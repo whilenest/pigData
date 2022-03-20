@@ -1,0 +1,7 @@
+<!--pages/consumer/report/report.wxml-->
+<view class="btnbox">
+  <button bindtap="handlReportForWatch" data-watch="Month">月报表</button>
+  <button bindtap="handlReportForWatch" data-watch="Year">年报表</button>
+  <button bindtap="handlReportForWatch" data-watch="All">目前总盈亏报表</button>
+  <button bindtap="handlReportForWatch" data-watch="Spend">开支报销记录</button>
+</view>

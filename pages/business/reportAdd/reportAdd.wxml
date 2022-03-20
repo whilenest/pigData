@@ -1,0 +1,67 @@
+<!--pages/business/reportAdd/reportAdd.wxml-->
+<view class="weui-form__control-area box">
+  <view class="weui-cells__group weui-cells__group_form">
+    <view class="weui-cells">
+
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd"><label class="weui-label">年：</label></view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindinput="handlInputChange" data-change="year" placeholder="请填写" binplaceholder-class="weui-input__placeholder" />
+        </view>
+      </view>
+
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd"><label class="weui-label">月：</label></view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindinput="handlInputChange" data-change="month" placeholder="请填写" binplaceholder-class="weui-input__placeholder" />
+        </view>
+      </view>
+
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd"><label class="weui-label">总成本支出：</label></view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindinput="handlInputChange" data-change="allPay" placeholder="请填写" binplaceholder-class="weui-input__placeholder" />
+        </view>
+      </view>
+
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd"><label class="weui-label">总卖出收入：</label></view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindinput="handlInputChange" data-change="allIncome" placeholder="请填写" binplaceholder-class="weui-input__placeholder" />
+        </view>
+      </view>
+
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd"><label class="weui-label">总开支报销：</label></view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindinput="handlInputChange" data-change="spendAll" placeholder="请填写" binplaceholder-class="weui-input__placeholder" />
+        </view>
+      </view>
+
+    </view>
+
+    <view class="title">开支报销详情</view>
+    <view class="spendBox" wx:for="{{spend}}" wx:key="index">
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd"><label class="weui-label">提交人：</label></view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindinput="handlInputSpend" value="{{spend[index].name}}" data-index="{{index}}" data-change="name" placeholder="请填写" binplaceholder-class="weui-input__placeholder" />
+        </view>
+      </view>
+
+      <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd"><label class="weui-label">报销详情：</label></view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindinput="handlInputSpend" value="{{spend[index].textList}}" data-index="{{index}}" data-change="textList" placeholder="请填写" binplaceholder-class="weui-input__placeholder" />
+        </view>
+      </view>
+      <view class="delBtn" data-index="{{index}}" bindtap="handlDelBtn">删除</view>
+    </view>
+
+    <view class="addBtn" bindtap="handlAddBtn">新增报销+</view>
+
+  </view>
+</view>
+
+<button bindtap="handlBtnClick">添加</button>
+

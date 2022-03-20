@@ -1,0 +1,22 @@
+/* pages/consumer/search/search.wxss */
+.btnbox {
+  width: 500rpx;
+  height: 400rpx;
+  margin: 300rpx auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btnbox button {
+  display: block;
+  height: 100rpx;
+  line-height: 95rpx;
+  font-size: 38rpx;
+  margin: 30rpx;
+  padding: 0;
+  background-color: #fff;
+  font-weight: normal;
+  border: 1rpx solid #333;
+  /* font-weight: normal; */
+}

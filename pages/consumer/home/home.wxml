@@ -1,0 +1,27 @@
+<!--pages/consumer/home/home.wxml-->
+<view class="top">
+  <view class="tips">数据在{{lastDate.year}}年{{lastDate.month}}月{{lastDate.date}}日更新</view>
+  <view class="title">近期盈亏数据/列表</view>
+  <lineCanvas wx:if="{{lookNow}}" canvasDataList="{{canvasDataList}}"></lineCanvas>
+  <lineCanvas wx:else canvasDataList="{{canvasDataList}}"></lineCanvas>
+</view>
+
+<view class="btn">
+  <button class="{{lookNow ? 'active' : ''}}" bindtap="handleSelect" data-select="week">近一周</button>
+  <button class="{{!lookNow ? 'active' : ''}}" bindtap="handleSelect" data-select="month">近14天</button>
+</view>
+
+<view class="line"></view>
+
+<view class="pigListbox">
+  <view class="th title">
+    <text>车次编号</text>
+    <text>装猪日期</text>
+    <text>盈亏</text>
+  </view>
+  <view wx:for="{{list}}" wx:key="index" class="th list" bindtap="handlListClick" data-id="{{item.id}}">
+    <text>{{item.id}}</text>
+    <text class=".mid">{{item.stockYear + '年' + item.stockMonth + '月' + item.stockDate + '日'}}</text>
+    <text style="color: {{item.profitAndLoss >= 0 ? 'red' : 'green'}};">{{item.profitAndLoss >= 0 ? '+' + item.profitAndLoss : item.profitAndLoss}}</text>
+  </view>
+</view>
